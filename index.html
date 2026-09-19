@@ -1,13 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Olá, eu sou Izabela Sanitá</h1>
-    <p>Estudante de Ciência da Computação e aspirante em Cibersegurança.</p>
+    <header>
+        <nav>
+            <a href="#inicio">Izabela Sanitá</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#conhecimentos">Conhecimentos</a>
+            <a href="#contatos">Contatos</a> 
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <p>Olá, eu sou</p>
+            <h1>Izabela Sanitá</h1>
+            <p>Estudante de Ciência da Computação e aspirante em Cibersegurança.</p>
+            <a href="#projetos">Ver projetos</a>
+            <a href="#contatos">Contatos</a>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+
+            <h3>Quem sou eu?</h3>
+            <p>
+                Sou estudante do curso de graduação de Ciência da Computação
+                da UTFPR. Atualmente estou no 3° semestre e estou entrando 
+                no segundo semestre consecutivo como monitora da matéria de 
+                Introdução à Programação.
+            </p>
+
+            <h3>Meus interesses</h3>
+            <p>
+                Atualmente, tenho me interessado e estudado bastante sobre 
+                Redes de Computadores, Cibersegurança e Sistemas Operacionais. 
+                Tenho especial interesse pela área defensiva da Cibersegurança 
+                e por tecnologias relacionadas a Linux.
+            </p>
+
+            <h3>Experiência acadêmica</h3>
+            <p>
+                Durante o ensino médio e a graduação já fiz alguns pequenos trabalhos e projetos 
+                que me proporcionaram experiência com ferramentas como o Logisim, 
+                VSCode, Figma e Arduino.
+            </p>
+            
+            <p>
+                Como monitora de Introdução à Programação, também tive a oportunidade de trabalhar 
+                em um projeto de correção de erros conceituais em códigos que já existia em um 
+                repositório público, adaptando-o para corrigir os códigos dos alunos nas atividades 
+                do Moodle da disciplina.
+            </p>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+
+            <h3>Detector de Erros Conceituais (MC3)</h3>
+            <p>
+                É uma ferramenta em Python voltada para apoio pedagógico na disciplina de Introdução 
+                à Programação. O sistema é uma adaptação que realiza a análise estática automatizada em códigos enviados 
+                via Moodle para identificar e quantificar <i>Misconceptions in Correct Code</i> (MC3), 
+                que são erros de lógica ou estrutura em códigos que compilam, mas violam boas práticas 
+                conceituais.
+            </p>
+
+            <h4>O que eu fiz:</h4>
+            <ul>
+                <li>
+                    <b>Motor de Detecção:</b> Adaptei e estruturei a classe VisitorMC3 para varrer 
+                    submissões de código sem depender de erros de sintaxe. A classe foi extraída e adaptada 
+                    do <a href="https://github.com/eryckpedro/mc4" target="_blank" rel="noopener noreferrer">repositório original</a>.
+                </li>
+                <li>
+                    <b>Validação Inteligente:</b> Integrei a biblioteca pyspellchecker para verificar 
+                    nomenclaturas de variáveis, eliminando falsos positivos em constantes válidas e 
+                    nomes curtos.
+                </li>
+                <li>
+                    <b>Geração de Métricas:</b> Desenvolvi rotinas em Python para processar dados em JSON 
+                    e exportar relatórios detalhados (.txt) e planilhas de desempenho (.csv) com o ranking 
+                    dos erros mais comuns.
+                </li>
+            </ul>
+            
+            <h4>Tecnologias:</h4>
+            <p>Python - Análise Estática - Parsing (JSON/CSV)</p>
+
+            <strong><a href="https://github.com/izabelasanita/detector-erros-conceituais" target="_blank" rel="noopener noreferrer">Acesse o meu repositório no GitHub</a></strong>
+        </section>
+
+        <section id="conhecimentos">
+            <h2>Conhecimentos</h2>
+
+            <h3>Linguagens de Programação</h3>
+            <ul>
+                <li>Python</li>
+                <li>C</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Ferramentas</h3>
+            <ul>
+                <li>Logisim</li>
+                <li>VSCode</li>
+                <li>Figma</li>
+                <li>Arduino</li>
+            </ul>
+
+            <h3>Áreas de Estudo</h3>
+            <ul>
+                <li>Redes de Computadores</li>
+                <li>Cibersegurança</li>
+                <li>Sistemas Operacionais</li>
+            </ul>
+        </section>
+
+        <section id="contatos">
+            <h2>Contatos</h2>
+            <ul>
+                <li><a href="mailto:izabelaasanita@gmail.com"><b>E-mail</b></a></li>
+                <li><a href="https://www.linkedin.com/in/izabelasanita/" target="_blank" rel="noopener noreferrer"><b>GitHub</b></a></li>
+                <li><a href="https://github.com/izabelasanita" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b></a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Izabela Sanitá</p>
+    </footer>
 </body>
+
 </html>
