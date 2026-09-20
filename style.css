@@ -1,7 +1,77 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+body{
+    font-family: "Raleway", sans-serif;
+    background-color: #e5e1f5;
+    color: #302a3d;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4{
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    background-color: #2c2257;
+    color: #e5e1f5;
+    padding: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: #e5e1f5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: #8e88a6;
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     text-align: center;
-    padding-top: 50px;
+    padding: 90px;
+}
+
+#inicio h1{
+    color: #2c2257;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+#inicio p:first-child{
+    color: #686087;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#inicio img{
+    width: 350px;
+    height: 350px;
+    border-radius: 80px;
+    border: 3px solid #686087;
+}
+
+#inicio a{
+    background-color: #2c2257;
+    color: #e5e1f5;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 15px;
+}
+
+#inicio a:hover{
+    background-color: #8e88a6;
+    color: #2c2257;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
