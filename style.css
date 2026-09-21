@@ -1,7 +1,18 @@
+/*Base*/
+:root{
+    --roxo-fundo: #e5e1f5;
+    --roxo-fonte: #302a3d;
+    --roxo-destaque: #2c2257;
+    --roxo-detalhes: #8e88a6;
+    --roxo-secundario: #686087;
+    --roxo-fundo-destaque: #f2f0fc;
+    --roxo-destaque-2: #4c436b;
+}
+
 body{
     font-family: "Raleway", sans-serif;
-    background-color: #e5e1f5;
-    color: #302a3d;
+    background-color: var(--roxo-fundo);
+    color: var(--roxo-fonte);
     font-size: 18px;
 }
 
@@ -9,9 +20,10 @@ h1, h2, h3, h4{
     font-family: "Montserrat", sans-serif;
 }
 
+/*Header*/
 header{
-    background-color: #2c2257;
-    color: #e5e1f5;
+    background-color: var(--roxo-destaque);
+    color: var(--roxo-fundo);
     padding: 30px;
 }
 
@@ -21,15 +33,16 @@ nav{
 }
 
 nav a{
-    color: #e5e1f5;
+    color: var(--roxo-fundo);
     text-decoration: none;
     font-weight: 600;
 }
 
 nav a:hover{
-    color: #8e88a6;
+    color: var(--roxo-detalhes)
 }
 
+/*Início*/
 #inicio{
     display: flex;
     align-items: center;
@@ -39,13 +52,13 @@ nav a:hover{
 }
 
 #inicio h1{
-    color: #2c2257;
+    color: var(--roxo-destaque);
     font-size: 45px;
     font-weight: 900;
 }
 
 #inicio p:first-child{
-    color: #686087;
+    color: var(--roxo-secundario);
     font-size: 24px;
     font-weight: 600;
 }
@@ -54,24 +67,179 @@ nav a:hover{
     width: 350px;
     height: 350px;
     border-radius: 80px;
-    border: 3px solid #686087;
+    border: 3px solid var(--roxo-secundario);
 }
 
 #inicio a{
-    background-color: #2c2257;
-    color: #e5e1f5;
+    background-color: var(--roxo-destaque);
+    color: var(--roxo-fundo);
     text-decoration: none;
     padding: 12px 16px;
     border-radius: 15px;
 }
 
 #inicio a:hover{
-    background-color: #8e88a6;
-    color: #2c2257;
+    background-color: var(--roxo-detalhes);
+    color: var(--roxo-destaque);
 }
 
 .botoes{
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+
+/*Sobre Mim*/
+.cards-sobre{
+    display: flex;
+    gap: 30px;
+}
+
+.card-sobre{
+    background-color: var(--roxo-fundo-destaque);
+    padding: 30px;
+    border-radius: 40px;
+    flex: 1;
+}
+
+.card-sobre h3{
+    color: var(--roxo-secundario);
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.card-sobre p{
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/*Projetos*/
+.card-projeto{
+    background-color: var(--roxo-fundo-destaque);
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.card-projeto h3{
+    color: var(--roxo-destaque-2);
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.card-projeto > p{
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.card-projeto h4{
+    color: var(--roxo-secundario);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-projeto ul{
+    line-height: 1.6;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.tecnologias{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tecnologias span{
+    background-color: var(--roxo-fundo);
+    color: var(--roxo-secundario);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.link-projeto{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--roxo-destaque-2);
+    color: var(--roxo-fundo);
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.link-projeto:hover{
+    background-color: var(--roxo-detalhes);
+    color: var(--roxo-destaque-2);
+}
+
+/*Conhecimentos*/
+.cards-conhecimento{
+    display: flex;
+    gap: 30px;
+}
+
+.card-conhecimento{
+    background-color: var(--roxo-fundo-destaque);
+    padding: 30px;
+    border-radius: 40px;
+    flex: 1;
+}
+
+.card-conhecimento h3{
+    color: var(--roxo-secundario);
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.tags-conhecimento{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tags-conhecimento span{
+    background-color: var(--roxo-fundo);
+    color: var(--roxo-secundario);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/*Contatos*/
+.cards-contato ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.cards-contato li{
+    background-color: var(--roxo-destaque);
+    padding: 15px 25px;
+    border-radius: 20px;
+}
+
+.cards-contato a{
+    color: var(--roxo-fundo-destaque);
+    text-decoration: none;
+}
+
+.cards-contato a:hover{
+    color: var(--roxo-detalhes);
+}
+
+#sobre, #projetos, #conhecimentos, #contatos{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--roxo-destaque);
+    color: var(--roxo-fundo);
+    text-align: center;
+    padding: 8px;
 }
